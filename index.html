@@ -60,7 +60,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Shanghai AI Laboratory</span>
+            <span class="author-block"><sup>1</sup>Shanghai AI Laboratory </span>
             <span class="author-block"><sup>2</sup>S-Lab, Nanyang Technological University</span>
           </div>
           <div class="column has-text-centered">
@@ -195,9 +195,9 @@
             <p>
                 <b>Left</b>: Our latent BRDF auto-encoder is trained on the TwoShotBRDF dataset with four losses, i.e., reconstruction loss, KL divergence loss, smoothness loss, and cyclic loss.
                 Imposing KL divergence and smoothness loss on latent embeddings encourages a smooth latent space.
-                <b>Right</b>: Instead of predicting BRDF materials directly, we leverage a material MLP $\Gamma$ to generate latent BRDF code $\vz$, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
+                <b>Right</b>: Instead of predicting BRDF materials directly, we leverage a material MLP &gamma to generate latent BRDF code $\vz$, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
                 Similar to prior works, the SDS loss can be applied to the rendered images, which empowers the training of our material MLP network.
-                (Note that, roughness $k_r$ is scalar and we visualize it with the green channel in this paper.)
+                (Note that, roughness k<sub>r</sub> is scalar and we visualize it with the green channel in this paper.)
             </p>
           </div>
         </div>
