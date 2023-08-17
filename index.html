@@ -192,12 +192,12 @@
         <div class="columns is-centered has-text-centered">
           <div class="column content">
             <img src="assets/pineline.jpg" alt="Pulpit rock" width="2050" height="534">
-            <p style="font-size:1;">
+            <p style="font-size:5px;">
                 <b>Left</b>: Our latent BRDF auto-encoder is trained on the TwoShotBRDF dataset with four losses, i.e., reconstruction loss, KL divergence loss, smoothness loss, and cyclic loss.
                 Imposing KL divergence and smoothness loss on latent embeddings encourages a smooth latent space.
                 
             </p>
-            <p style="font-size:1;">
+            <p style="font-size:5px;">
               <b>Right</b>: Instead of predicting BRDF materials directly, we leverage a material MLP <b>&gamma;</b> to generate latent BRDF code <b>z</b>, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
                 Similar to prior works, the SDS loss can be applied to the rendered images, which empowers the training of our material MLP network.
                 (Note that, roughness <b>k<sub>r</sub></b> is scalar and we visualize it with the green channel in this paper.)
@@ -226,7 +226,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column content">
             <img src="assets/quality.jpg" alt="Pulpit rock" width="1325" height="1532">
-            <p style="font-size:1;">
+            <p style="font-size:5px;">
                 The gallery of our text-to-3D generation results. Shapes, normal maps, and shaded images from two random viewpoints are presented here.
             </p>
           </div>
