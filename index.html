@@ -153,7 +153,7 @@
           <p>
             Based on powerful text-to-image diffusion models, text-to-3D generation has made significant progress in generating compelling geometry and appearance.
             However, existing methods still struggle to recover high-fidelity object materials, either only considering Lambertian reflectance, or failing to disentangle BRDF materials from the environment lights.
-            In this work, we propose Material-Aware Text-to-3D via LAtent BRDF auto-EncodeR (MATLABER) that leverages a novel latent BRDF auto-encoder for material generation.
+            In this work, we propose Material-Aware Text-to-3D via LAtent BRDF auto-EncodeR (<b>MATLABER</b>) that leverages a novel latent BRDF auto-encoder for material generation.
             We train this auto-encoder with large-scale real-world BRDF collections and ensure the smoothness of its latent space, which implicitly acts as a natural distribution of materials. 
             During appearance modeling in text-to-3D generation, the latent BRDF embeddings, rather than BRDF parameters, are predicted via a material network.
             Through exhaustive experiments, our approach demonstrates the superiority over existing methods in generating realistic and coherent object materials.
@@ -193,9 +193,9 @@
           <div class="column content">
             <img src="assets/pineline.jpg" alt="Pulpit rock" width="2050" height="534">
             <p>
-                Left: Our latent BRDF auto-encoder is trained on the TwoShotBRDF dataset with four losses, i.e., reconstruction loss, KL divergence loss, smoothness loss, and cyclic loss.
+                <b>Left</b>: Our latent BRDF auto-encoder is trained on the TwoShotBRDF dataset with four losses, i.e., reconstruction loss, KL divergence loss, smoothness loss, and cyclic loss.
                 Imposing KL divergence and smoothness loss on latent embeddings encourages a smooth latent space.
-                Right: Instead of predicting BRDF materials directly, we leverage a material MLP $\Gamma$ to generate latent BRDF code $\vz$, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
+                <b>Right</b>: Instead of predicting BRDF materials directly, we leverage a material MLP $\Gamma$ to generate latent BRDF code $\vz$, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
                 Similar to prior works, the SDS loss can be applied to the rendered images, which empowers the training of our material MLP network.
                 (Note that, roughness $k_r$ is scalar and we visualize it with the green channel in this paper.)
             </p>
